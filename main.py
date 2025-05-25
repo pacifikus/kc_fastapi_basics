@@ -43,6 +43,7 @@ def health():
 def get_item_path(item_id):
     return {"item_id": item_id}
 
+
 @app.get("/query/")
 async def get_item_query(item_id: int = 0):
     return  {"item_id": item_id}
